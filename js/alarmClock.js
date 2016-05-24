@@ -1,10 +1,9 @@
-exports.Alarm = function(currentTime, setTime) {
-  this.currentTime = currentTime;
+exports.Alarm = function(setTime) {
   this.setTime = setTime;
 };
 
 exports.Alarm.prototype.alarmTime = function() {
-  if (this.currentTime === this.setTime) {
+  if (moment().format("hh:mm a") === this.setTime ) {
     return true;
   } else {
     return false;

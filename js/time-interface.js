@@ -3,5 +3,6 @@ $(document).ready(function() {
 });
 
 displayTime = function() {
-  $('#time').text(moment());
-}
+  $('#date').text(moment().format("ddd, MMM Do YYYY"));
+  $('#time').text(moment().format("hh:mm A"));
+};
