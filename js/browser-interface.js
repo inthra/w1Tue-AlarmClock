@@ -1,4 +1,4 @@
-var Alarm = require('./../browser.js').Alarm;
+var Alarm = require('./../js/alarmClock.js').Alarm;
 
 $(document).ready(function() {
   $('#setAlarm').submit(function(event) {
