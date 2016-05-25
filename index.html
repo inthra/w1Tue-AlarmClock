@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="bower_components/moment/min/moment.min.js"></script> -->
-
     <link rel="stylesheet" href="build/css/vendor.css">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
@@ -14,38 +9,24 @@
 
   <body>
     <div class="container">
-      <h1>Alarm Clock</h1>
-      <hr>
 
-      <div id="currentTime">
-        <h3>Current Time</h3>
-        <h3 id="date"></h3>
-        <h3 id="time"></h3>
+      <div class="jumbotron">
+        <h1>Alarm Clock</h1>
+        <h2 id="date"></h2>
+        <h2 id="time"></h2>
       </div>
-      <hr>
 
       <div>
         <form id="setAlarm">
           <h3>Set your alarm</h3>
           <label for="hour">Hour</label>
           <select id="hour">
-            <option value="01">01</option>
-            <option value="02">02</option>
-            <option value="03">03</option>
-            <option value="04">04</option>
-            <option value="05">05</option>
-            <option value="06">06</option>
-            <option value="07">07</option>
-            <option value="08">08</option>
-            <option value="09">09</option>
-            <option value="10">10</option>
-            <option value="11">11</option>
-            <option value="12">12</option>
+            <!-- The <option> are created by looping in javascript. -->
           </select>
 
           <label for="min">Minute</label>
           <select id="min">
-
+            <!-- The <option> are created by looping in javascript. -->
           </select>
 
           <select id="am_pm">
@@ -53,8 +34,6 @@
             <option value="PM">PM</option>
           </select>
 
-          <!-- <h4>(hh:mm AM/PM)</h4>
-          <input type="time" id="enterTime"> -->
           <button type="submit" class="btn btn-info">Set</button>
         </form>
       </div>
